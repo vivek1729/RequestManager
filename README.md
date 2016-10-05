@@ -18,8 +18,11 @@ A **`PUT`** request to `api/kill`
 This API will finish the running request with provided connId, so that the finished request returns `{"status":"killed"}` and the current request will return `{"status":"ok"}`. If no running request found with the provided connId on the server then the current request should return `{"status":"invalid connection Id : <connId>"}`
 
 
-Running the express server - `npm start`
-Running the socket server - `node socket_server.js`
+**Getting started**
+
+* `npm install` to install all the dependencies
+* Running the express server - `npm start`
+* Running the socket server - `node socket_server.js`
 
 **Issue with socket server**
 
